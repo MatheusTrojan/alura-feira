@@ -1,18 +1,12 @@
 import { Button } from '@material-ui/core';
-import {
-  Container,
-  Titulo,
-  InputContainer
-} from './styles';
-import {
-  Input,
-  InputLabel,
-  InputAdornment 
-} from '@material-ui/core';
+import { Container, Titulo, InputContainer } from './styles';
+import { Input, InputLabel, InputAdornment } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 
 function Login({ nome, setNome, saldo, setSaldo }) {
+
   const history = useHistory();
+
   return (
     <Container>
       <Titulo>
