@@ -26,15 +26,30 @@ export const useCarrinhoContext = () => {
 				[...carrinhoAnterior, novoProduto]
 			);
 		}
+
 		setCarrinho(carrinhoAnterior => carrinhoAnterior.map(itemDoCarrinho => {
 			if(itemDoCarrinho.id === novoProduto.id) itemDoCarrinho.quantidade += 1;
 			return itemDoCarrinho;
  		}))
 	}
 
+    function removerProduto(id) {
+        const produto = carrinho.find(itemDoCarrinho => itemDoCarrinho.id === id);
+        const ultimaUnidade = produto.quantidade === 1;
+        if (ultimaUnidade) {
+            return setCarrinho(carrinhoAnterior => carrinhoAnterior.filter(itemDoCarrinho => itemDoCarrinho.id !== id))
+        }
+
+        setCarrinho(carrinhoAnterior => carrinhoAnterior.map(itemDoCarrinho => {
+			if(itemDoCarrinho.id === id) itemDoCarrinho.quantidade -= 1;
+			return itemDoCarrinho;
+ 		}))
+    }
+
     return {
         carrinho, 
         setCarrinho,
-        adicionarProduto
+        adicionarProduto,
+        removerProduto
     }
 }
