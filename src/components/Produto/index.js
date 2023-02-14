@@ -18,7 +18,7 @@ function Produto({ nome, foto, id, valor, unidade }) {
 					alt={`foto de ${nome}`}
 				/>
 				<p>
-					{nome} - R$ {valor?.toFixed(2)} <span>Kg</span>
+					{nome} - R$ {valor?.toFixed(2)} <span>/ Kg</span>
 				</p>
 			</div>
 			<div>
