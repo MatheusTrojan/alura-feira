@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Alura Feira
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Página web criada para praticar o gerenciamento de estados globais com ContextAPI.</p>
 
-## Available Scripts
+## Conteúdo deste Readme:
 
-In the project directory, you can run:
+- [Resumo](#resumo)
+  - [O Desafio](#o-desafio)
+  - [Screenshot](#screenshot)
+  - [Deploy](#deploy)
+- [Meu processo](#meu-processo)
+  - [Projetado com](#projetado-com)
+  - [O que eu aprendi](#o-que-eu-aprendi)
+- [Autores](#autores)
 
-### `yarn start`
+## Resumo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### O Desafio
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O objetivo principal deste projeto é aprender sobre as funcionalidades do ContextAPI, através da criação de uma página de feira de verduras, onde o usuário poderá adicionar ao carrinho e finalizar a compra. O site é completamente responsivo.
 
-### `yarn test`
+O usuário deverá conseguir:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Validar seu nome e o saldo disponível para a compra;
+- Escolher quais produtos quer acrescentar em seu carrinho de compras;
+- Verificar a quantidade total de itens ao lado do botão do carrinho de compras, localizado no cabeçalho;
+- Acessar a página do carrinho de compras através do botão no cabeçalho;
+- Navegar pelos produtos selecionados, com a opção de aumentar ou diminuir a quantidade, bem como excluir algum produto do carrinho;
+- Acompanhar o valor total da compra de forma simultânea e selecionar a forma de pagamento;
+- Verificar o preço total com juros, o saldo disponível e o saldo que restará após a compra;
+- Não deverá conseguir finalizar a compra com o carrinho vazio ou com saldo insuficiente;
 
-### `yarn build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Página inicial
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](/public/prints/print1.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Produtos disponíveis na feira
 
-### `yarn eject`
+![](/public/prints/print2.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Produtos selecionados e botão de carrinho atualizado
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](/public/prints/print3.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Carrinho de compras com os produtos selecionados e as formas de pagamento
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![](/public/prints/print4.png)
 
-## Learn More
+#### Valor total da compra, saldo disponível e troco, junto do botão de finalizar compra
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](/public/prints/print5.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Compra finalizada com sucesso
 
-### Code Splitting
+![](/public/prints/print6.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deploy
 
-### Analyzing the Bundle Size
+Confira o projeto em funcionamento através do [link](https://alura-feira-roan.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Processo de Criação
 
-### Making a Progressive Web App
+### Projetado com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [React](https://pt-br.reactjs.org/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Styled Components](https://styled-components.com/)
+- [ContextAPI](https://reactjs.org/docs/context.html)
+- Hooks [useEffect](https://pt-br.reactjs.org/docs/hooks-effect.html), [useState](https://pt-br.reactjs.org/docs/hooks-state.html) e [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory)
+- Hooks personalizados;
 
-### Advanced Configuration
+### O que eu aprendi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🟢 Manipulação de estados globais com o ContextAPI<br>
+🟢 Como criar hooks que atendam a necessidade do projeto conforme o contexto<br>
+🟢 Como utilizar o useHistory para avançar para próxima página ou voltar<br>
 
-### Deployment
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Matheus Trojan](https://www.linkedin.com/in/matheus-trojan/)
