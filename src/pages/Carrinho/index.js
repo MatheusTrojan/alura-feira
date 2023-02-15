@@ -4,7 +4,7 @@ import { useCarrinhoContext } from 'common/context/Carrinho';
 import { usePagamentoContext } from 'common/context/Pagamento';
 import { UsuarioContext } from 'common/context/Usuario';
 import Produto from 'components/Produto';
-import { useContext, useState } from 'react';
+import { useContext, useMemo, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Container, Voltar, TotalContainer, PagamentoContainer} from './styles';
 
@@ -18,7 +18,7 @@ function Carrinho() {
 
 	const history = useHistory();
 
-	const totalRestante = saldo - valorTotalCarrinho;
+	const totalRestante = useMemo(() => saldo - valorTotalCarrinho, [saldo, valorTotalCarrinho]);
 
 	return (
 		<Container>
@@ -66,7 +66,7 @@ function Carrinho() {
 				onClick={() => {
 					setOpenSnackbar(true);
 				}}
-				disabled={totalRestante < 0}
+				disabled={totalRestante < 0 || carrinho.length === 0}
 				color="primary"
 				variant="contained"
 			>
